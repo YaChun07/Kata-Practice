@@ -11,26 +11,22 @@ namespace Next_bigger_number_with_the_same_digits
 
         public static long NextBiggerNumber(long n)
         {
-            char[] num = n.ToString().ToCharArray();
-            string result = "";
-            for (int i = num.Length - 2; i >= 0; i--)
+            var num = n.ToString().ToCharArray();
+            for (var i = num.Length - 2; i >= 0; i--)
             {
-                if (num[i] < num[i + 1])
+                if (num[i] >= num[i + 1]) continue;
+                
+                var numLeft = n.ToString().Substring(0, i + 1).ToCharArray();
+                var numRight = n.ToString().Substring(i + 1, num.Length - i - 1).ToCharArray();
+                Array.Sort(numRight);
+                for (var j = 0; j < numRight.Length; j++)
                 {
-                    char[] numLeft = n.ToString().Substring(0, i + 1).ToCharArray();
-                    char[] numRight = n.ToString().Substring(i + 1, num.Length - i - 1).ToCharArray();
-                    Array.Sort(numRight);
-                    for (int j = 0; j < numRight.Length; j++)
-                    {
-                        
-                        if (numLeft[i] < numRight[j])
-                        {
-                            numLeft[i] = numRight[j];
-                            numRight[j] = num[i];
-                            result = new string(numLeft) + new string(numRight);
-                            return Convert.ToInt64(result);
-                        }
-                    }
+                    if (numLeft[i] >= numRight[j]) continue;
+
+                    numLeft[i] = numRight[j];
+                    numRight[j] = num[i];
+                    var result = new string(numLeft) + new string(numRight);
+                    return Convert.ToInt64(result);
                 }
             }
             return -1;
