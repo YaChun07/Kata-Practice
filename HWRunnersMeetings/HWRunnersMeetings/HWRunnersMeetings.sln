@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWRunnersMeetings", "HWRunnersMeetings\HWRunnersMeetings.csproj", "{CA5B27C7-DB83-46CD-988C-C65001785AC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA5B27C7-DB83-46CD-988C-C65001785AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5B27C7-DB83-46CD-988C-C65001785AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5B27C7-DB83-46CD-988C-C65001785AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5B27C7-DB83-46CD-988C-C65001785AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70FA9A2F-43AD-4BDE-9822-FBC94E62B60A}
+	EndGlobalSection
+EndGlobal
