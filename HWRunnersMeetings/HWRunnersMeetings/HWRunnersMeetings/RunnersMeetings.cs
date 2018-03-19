@@ -7,7 +7,7 @@ namespace HWRunnersMeetings
     {
         public static int CountMeetPeople(int[] startPosition, int[] speed)
         {
-            var positionList = new List<float>();
+            var positionList = new List<double>();
             var speedList = new List<int>(speed);
             var time = 0;
             var maxPersonCount = 0;
@@ -15,7 +15,7 @@ namespace HWRunnersMeetings
             {
                 for (var i = 0; i < speedList.Count; i++)
                 {
-                    positionList.Add((speedList[i] * time) / 60 + startPosition[i]);
+                    positionList.Add(((speedList[i] / 60.00) * time) + startPosition[i]);
                 }
                 var personcount = positionList.GroupBy(x => x).Max(x => x.Count());
 

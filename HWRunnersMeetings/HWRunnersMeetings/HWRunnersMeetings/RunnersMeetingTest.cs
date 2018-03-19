@@ -28,5 +28,11 @@ namespace HWRunnersMeetings
         {
             Assert.AreEqual(2, RunnersMeetings.CountMeetPeople(new int[] { 1, 1000 }, new int[] { 23, 22 }));
         }
+
+        [TestMethod]
+        public void RunnersMeetingsTest_with_twelve_player()
+        {
+            Assert.AreEqual(2, RunnersMeetings.CountMeetPeople(new int[] { -784, -42, -35, 33, -38, -21, -18, 27, -39, -36, -628, 16 }, new int[] { 18, 29, 17, 19, 13, 10, 21, 1, 16, 19, 5, 11 }));
+        }
     }
 }
