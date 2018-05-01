@@ -18,26 +18,25 @@ namespace HWPascalTriangle
 
         private static List<int> PascalsTriangle(int totalLayer)
         {
-            if (totalLayer == 1)
+            switch (totalLayer)
             {
-                return new List<int> { 1 };
-            }
-            else if (totalLayer == 2)
-            {
-                return new List<int> { 1, 1 };
-            }
-            else
-            {
-                var currentList = new List<int> { 1 };
-                var preLayerList = PascalsTriangle(totalLayer - 1);
+                case 1:
+                    return new List<int> { 1 };
+                case 2:
+                    return new List<int> { 1, 1 };
+                default:
+                    {
+                        var currentList = new List<int> { 1 };
+                        var preLayerList = PascalsTriangle(totalLayer - 1);
 
-                for (var i = 0; i < preLayerList.Count - 1; i++)
-                {
-                    currentList.Add(preLayerList[i] + preLayerList[i + 1]);
-                }
-                currentList.Add(1);
+                        for (var i = 0; i < preLayerList.Count - 1; i++)
+                        {
+                            currentList.Add(preLayerList[i] + preLayerList[i + 1]);
+                        }
+                        currentList.Add(1);
 
-                return currentList;
+                        return currentList;
+                    }
             }
         }
     }
