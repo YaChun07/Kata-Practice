@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace HWPascalTriangle
 {
@@ -6,13 +7,13 @@ namespace HWPascalTriangle
     {
         public static List<int> CalcualteLayer(int totalLayer)
         {
-            var ints = new List<int>();
+            var results = new List<int>();
 
             for (var i = 1; i <= totalLayer; i++)
             {
-                ints.AddRange(PascalsTriangle(i));
+                results.AddRange(PascalsTriangle(i));
             }
-            return ints;
+            return results;
         }
 
         private static List<int> PascalsTriangle(int totalLayer)
@@ -27,14 +28,16 @@ namespace HWPascalTriangle
             }
             else
             {
-                var list = new List<int> { 1 };
-                var ints = PascalsTriangle(totalLayer - 1);
-                for (var i = 0; i < ints.Count - 1; i++)
+                var currentList = new List<int> { 1 };
+                var preLayerList = PascalsTriangle(totalLayer - 1);
+
+                for (var i = 0; i < preLayerList.Count - 1; i++)
                 {
-                    list.Add(ints[i] + ints[i + 1]);
+                    currentList.Add(preLayerList[i] + preLayerList[i + 1]);
                 }
-                list.Add(1);
-                return list;
+                currentList.Add(1);
+
+                return currentList;
             }
         }
     }
