@@ -206,3 +206,7 @@ ModelManifest.xml
 /HWCountingChangeCombinations/packages
 /HWPascalTriangle/.vs/HWPascalTriangle/v15/Server/sqlite3
 /HWPascalTriangle/packages
+/HWMultiples/.vs/HWMultiples/v15/Server/sqlite3
+/HWMultiples/packages
+/HWFindMissingTerm/.vs/HWFindMissingTerm/v15/Server/sqlite3
+/HWFindMissingTerm/packages
