@@ -217,3 +217,5 @@ ModelManifest.xml
 /HWGetMiddleCharacter/packages
 /HWRomanConvert/packages
 /HWRomanConvert/.vs/HWRomanConvert/v15/Server/sqlite3
+/HWMaximumLengthDiff/.vs/HWMaximumLengthDiff/v15/Server/sqlite3
+/HWMaximumLengthDiff/packages
