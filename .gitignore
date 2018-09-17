@@ -225,3 +225,5 @@ ModelManifest.xml
 /HWExesAndOhs/packages
 /HWFindTheOddInt/.vs/HWFindTheOddInt/v15/Server/sqlite3
 /HWFindTheOddInt/packages
+/HWPersistentBugger/.vs/PersistentBugger/v15/Server/sqlite3
+/HWPersistentBugger/packages

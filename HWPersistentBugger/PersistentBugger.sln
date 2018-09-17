@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWPersistentBugger", "PersistentBugger\HWPersistentBugger.csproj", "{AF5EC4BB-DC42-41A8-85FC-9E20FE8D20AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF5EC4BB-DC42-41A8-85FC-9E20FE8D20AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5EC4BB-DC42-41A8-85FC-9E20FE8D20AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5EC4BB-DC42-41A8-85FC-9E20FE8D20AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5EC4BB-DC42-41A8-85FC-9E20FE8D20AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6997B0E6-5503-43FB-AC3B-F164FB8B3320}
+	EndGlobalSection
+EndGlobal
